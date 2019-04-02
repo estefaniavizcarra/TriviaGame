@@ -1,30 +1,31 @@
 $(document).ready(function(){
     $("section").hide();
-    $("#start-button").click(function(){
-        var number = 50;
-        var correctAnswers = 0;
-      $("#start-button").on("click", start);  
-      $("#done-button").on("click", finish);  
-      $("#restart").on("click", restart);  
+    $("#startButton").click(function(){
+      $("#startButton").on("click", start);  
+      $("#checkButton").on("click", finish);  
+      $("#restart-button").on("click", restart);  
+      $(".choice").on("click", verify);
 
       function verify() {
-
-    var selection = $(this).val().trim();
-
-        if (selection === "correct" && correctAnswers < 6) {
+var verify = $(this).val().trim();
+    if (verify=== "correct" && correctAnswers < 6) {
             correctAnswers++
+            // alert("Correct");
         }
-        else if (correctAnswers > 6) {
+    else if (verify==="wrong" && correctAnswers > 6) {
             counter.stop();
-         
+            // alert("wrong");
         }
-    }
-        ;
+      }
+      var number = 50;
+      var correctAnswers = 0;
+
       function start(){
+        number = 50;
           counter = setInterval(timer, 1000);
-          showMe("section");
-          hideMe(".card");
-          hideMe(".jumbotronfooter")
+          show("section");
+          hide(".card");
+          hide(".jumbotronfooter")
 
       }
       function timer(){
@@ -35,11 +36,13 @@ $(document).ready(function(){
         }
       }
       function stop(){
-          clearInterval(counter); 
+          number=1
+        clearInterval(counter); 
         $(".card").show();
           $("section").hide();
-          (".jumbotronfooter").show();
-            $("#puntos").html(correctAnswers + "/"   + "6")                
+          show(".jumbotronfooter")
+         $("#puntos").html("Score:"+ correctAnswers + "/6")      
+          
 
 
       }
@@ -55,15 +58,16 @@ $(document).ready(function(){
       }
   
       function restart(){
-
-          number = 50;
+    number = 50;
+    counter = setInterval(timer, 1000);
+    show(".card");
           start();
       }
   
-      function hideMe(e) {
+      function hide(e) {
           $(e).hide();
       }
-      function showMe(e) {
+      function show(e) {
           $(e).show();
       }
       start(); 
