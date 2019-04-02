@@ -1,0 +1,93 @@
+ body{
+   
+    /* background-image: url("https://image.freepik.com/vector-gratis/patron-colorido-globos-aerostaticos_1009-115.jpg") ; */
+    background-image: url("https://media.istockphoto.com/vectors/set-diaper-baby-vector-id540725794?k=6&m=540725794&s=612x612&w=0&h=fY8qBua3bd-cot80rH4u_oXGyQzRazKC3t-7b9-I_xg=") ;
+
+    background-size:cover;
+
+
+    text-align: center;
+    margin: auto;
+     background-size: auto; 
+
+}
+.jumbotron{
+    /* background-color: #7B241C!important; */
+    background-color:#ffe0ac!important;
+    font-family: 'Luckiest Guy', cursive;
+
+    /* font-family: 'Bungee Outline', cursive; */
+    text-align: center!important;
+    color:white!important;
+    height: 180px!important;
+    padding: 3em!important;
+    font-weight: bold!important;
+    letter-spacing: 7px!important;
+
+
+    
+}
+
+
+section{
+    background-color: #a0c1e6;
+    height:1000px;
+    padding: 30px;
+    margin: 2em;;
+    border-color: 3px palevioletred;
+}
+.card{
+    text-align: center!important;
+    background-color: #a0c1e6!important;
+
+} 
+#time-remaining {
+    font-weight: bold;
+    font-size: 30px;
+}
+.question {
+    margin: auto;
+    width: 90%;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+h1 {
+    padding: 0px;
+    margin: 10px;
+}
+
+
+form {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 90%;
+    text-align: center;
+    color:white
+}
+.card-text{
+    color:white!important;
+}
+.card-title{
+    color:white!important;
+}
+#btn{
+    align-items: center
+}
+.jumbotronfooter{
+    background-color: #a0c1e6!important;
+
+}
+.boton{
+
+    background-color: #a0c1e6!important;
+    color: white!important;
+    text-align:center;
+
+}
+.botones{
+align-self: center;
+margin: 0 auto;
+}

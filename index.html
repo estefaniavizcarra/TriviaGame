@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TRIVIA GAME!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="assets/javascript/app.js"></script>
+</head>
+<body>
+    <div class="container botones">
+
+                  <button class="btn btn-outline-success boton btn-block." type="button" id="done-button">Check Answers</button>
+
+                         <button class="btn btn-sm btn-outline-secondary boton btn-block." id="restart-buttons" type="button">Restart</button>
+                        </div>
+      
+                  <header>
+                
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Baby TRIVIA! <hr>  <div id = "time-remaining">1:00</div> 
+                </h1></header>
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+              
+    
+              <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Instrucciones</h5>
+                      <p class="card-text">Taking care of a newborn baby is no joke. Take this quiz to know if you're already prepered</p>
+                      <button class="btn btn-primary" id="start-button">Start</button>
+                     </div>
+                  </div> 
+                  <br>
+                  <br>
+        <section class="container">
+
+              
+    
+        <!-- I'm repeating alot here with these forms, which means there's probably a more efficient way to do this... -->
+        <div class = "question">When does a baby's umbilical cord stump fall off?" </div>
+    
+        <!-- inside each form, the value of the correct answer is set to "correct" -->
+        <form >
+            <input type="radio" name=1 class="choice" value="wrong">  1 - 2 days after birth
+            <input type="radio" name=1 class="choice" value="correct">  1-2 weeks after birth
+            <input type="radio" name=1 class="choice" value="wrong">  1 month or so after birth
+            <input type="radio" name=1 class="choice" value="wrong">  2 months or so after birth
+        </form>
+    
+        <br>
+    
+        <div class = "question">True or False – contact the doctor immediately if the baby’s umbilical cord stump gets wet?</div>
+    
+        <form >
+            <input type="radio" name=2 class="choice" value="correct"> false
+            <input type="radio" name=2 class="choice" value="false"> True
+        </form>
+    
+        <br>
+    
+        <div class = "question">"What is the substance that covers a newborn baby called?</div>
+    
+        <form >
+            <input type="radio" name=3 class="choice" value="correct"> Vernix
+            <input type="radio" name=3 class="choice" value="wrong"> Meconium
+            <input type="radio" name=3 class="choice" value="wrong"> Laguno
+            <input type="radio" name=3 class="choice" value="wrong"> Vernix
+        </form>
+    
+        <br>
+    
+        <div class = "question">How early can we start tummy time?</div>
+    
+        <form >
+            <input type="radio" name=4 class="choice" value="correct"> Right after birth
+            <input type="radio" name=4 class="choice" value="wrong"> 1 - 2 weeks after birth
+            <input type="radio" name=4 class="choice" value="wrong"> 2 - 3 months after birth
+            <input type="radio" name=4 class="choice" value="wrong"> 2 - 4 weeks after birth
+        </form>
+    
+        <br>
+    
+        <div class = "question">Which of the below positions should a baby never sleep in?</div>
+    
+        <form >
+            <input type="radio" name=5 class="choice" value="wrong"> Right Side 
+            <input type="radio" name=5 class="choice" value="wrong"> Left side
+            <input type="radio" name=5 class="choice" value="correct"> Stomach
+            <input type="radio" name=5 class="choice" value="wrong"> Back
+        </form>
+        
+        <br>
+    
+        <div class = "question">How long should tummy time last when a baby is 3 – 4 months old</div>
+    
+        <form >
+            <input type="radio" name=6 class="choice" value="wrong"> 5 minutes
+            <input type="radio" name=6 class="choice" value="wrong"> 10 minutes
+            <input type="radio" name=6 class="choice" value="correct"> 20 minutes
+            <input type="radio" name=6 class="choice" value="wrong"> 30 minutes
+        </form>
+        
+        <br>
+    
+        
+        <br>
+  
+    </section>
+    <footer>
+            <div class="jumbotron jumbotron-fluid jumbotronfooter">
+                    <div class="container">
+                      <h1 id="puntos">            
+                     </h1>
+                    </div>
+                </div>
+    </footer>
+        <script type="text/javascript" src = "assets/javascript/app.js"></script>
+    
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
