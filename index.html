@@ -8,10 +8,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
 </head>
 <body>
@@ -19,14 +18,14 @@
 
                   <button class="btn btn-outline-success boton btn-block." type="button" id="done-button">Check Answers</button>
 
-                         <button class="btn btn-sm btn-outline-secondary boton btn-block." id="restart-buttons" type="button">Restart</button>
+                         <button class="btn btn-sm btn-outline-secondary boton btn-block." id="restart-button" type="button">Restart</button>
                         </div>
       
                   <header>
                 
         <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">Baby TRIVIA! <hr>  <div id = "time-remaining">1:00</div> 
+                  <h1 class="display-4">Baby TRIVIA! <hr>  <div id = "time-remaining">50</div> 
                 </h1></header>
                 </div>
               </div>
@@ -34,7 +33,6 @@
               <br>
               <br>
               
-    
               <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Instrucciones</h5>
@@ -44,14 +42,13 @@
                   </div> 
                   <br>
                   <br>
+
         <section class="container">
 
               
     
-        <!-- I'm repeating alot here with these forms, which means there's probably a more efficient way to do this... -->
         <div class = "question">When does a baby's umbilical cord stump fall off?" </div>
     
-        <!-- inside each form, the value of the correct answer is set to "correct" -->
         <form >
             <input type="radio" name=1 class="choice" value="wrong">  1 - 2 days after birth
             <input type="radio" name=1 class="choice" value="correct">  1-2 weeks after birth
@@ -126,8 +123,5 @@
                     </div>
                 </div>
     </footer>
-        <script type="text/javascript" src = "assets/javascript/app.js"></script>
-    
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</body>
+    </body>
 </html>
